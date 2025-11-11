@@ -14,6 +14,7 @@ server.use("/", (req, res) => {
   res.sendFile(join(DIRNAME, "dist", "index.html"));
 });
 
+//s
 server.listen(3000, () => {
   console.log("running");
 });
