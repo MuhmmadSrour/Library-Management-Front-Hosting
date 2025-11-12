@@ -10,11 +10,10 @@ server.use(cors());
 
 server.use(express.static(join(DIRNAME, "dist")));
 
-server.use("/", (req, res) => {
+server.use(/^\/(.*)/, (req, res) => {
   res.sendFile(join(DIRNAME, "dist", "index.html"));
 });
 
-//s
 server.listen(3000, () => {
   console.log("running");
 });

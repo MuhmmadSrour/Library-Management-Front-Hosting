@@ -4,14 +4,15 @@
   "description": "This Library Management System represents a modern approach to library automation, combining robust functionality with excellent user experience to serve the needs of contemporary libraries and their patrons.",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "main": "server.ts",
   "scripts": {
     "start": "tsx server.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "express-history-api-fallback": "^2.2.1",
+    "helmet": "^8.1.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
